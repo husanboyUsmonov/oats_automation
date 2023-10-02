@@ -56,5 +56,6 @@ robot -d cd ../Results main.robot
 | Get Monthly Weather               | Keyword returns monthly forecast data | `robot --i monthly main.robot ` | **None** |
 | Get Weekend Weather               | Keyword returns weekendly forecast data | `robot --i weekend main.robot `| **None** |
 | Get Radar View                    | Keyword returns output as png and saves to Result folder | `robot --i radar main.robot `| **None** |
-| Get Latest Weather News                   | Keyword returns number of recent news given as param | `robot --i news main.robot `| **amount** |
+| Get Latest Weather News           | Keyword returns number of recent news given as param | `robot --i news main.robot `| **amount** |
+| Translate String Keywod Example   | It is just a example keyword in order illustrate how we can use addition python keyword in any other robot keywords or Suites | `robot --i tr-example main.robot `| **from  to text** |
 
