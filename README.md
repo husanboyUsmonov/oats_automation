@@ -51,9 +51,5 @@ robot -d cd ../Results main.robot
 |:-------------------------------|:---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|:---------------------------------------------------------------------------------------------------------------------------------------------------|:-----------------------------------------|
 | Get Today Weather                 | Keyword returns today's forecast data | `robot --i today main.robot ` | **None** |
 | Get Hourly Weather                | Keyword returns 12 hourly's forecast data | `robot --i hourly main.robot `| **None** |
-| Get 10 Day Weather                | Keyword returns 10 day's forecast data | `robot --i 10days main.robot `| **None**|
-| Get Monthly Weather               | Keyword returns monthly forecast data | `robot --i monthly main.robot `| **None** |
-| Get Weekend Weather                | Keyword returns weekendly forecast data | `robot --i weekend main.robot `| **None** |
-| Get Radar View                | Keyword returns output as png and saves to Result folder | `robot --i radar main.robot `| **None**|
-| Forecast air quality               | Keyword returns two outputs: air level and number  | `robot --i air-quality main.robot `| **None**|
-| Return recent news               | Keyword returns recent news in quantity of paramters  | `robot --i air-quality main.robot `| Number of news **3** |
+| Get Hourly Weather                | Keyword returns 12 hourly's forecast data | `robot --i hourly main.robot `| **None** |
+
