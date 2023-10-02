@@ -1,4 +1,4 @@
-## Description
+ ## Description
 This file includes Documentation, Installtion and Debugging tips for weatherdotcom library.
 
 ### Prerequisites
@@ -57,5 +57,16 @@ robot -d cd ../Results main.robot
 | Get Weekend Weather               | Keyword returns weekendly forecast data | `robot --i weekend main.robot `| **None** |
 | Get Radar View                    | Keyword returns output as png and saves to Result folder | `robot --i radar main.robot `| **None** |
 | Get Latest Weather News           | Keyword returns number of recent news given as param | `robot --i news main.robot `| **amount** |
-| Translate String Keywod Example   | It is just a example keyword in order illustrate how we can use addition python keyword in any other robot keywords or Suites | `robot --i tr-example main.robot `| **from  to text** |
+| Translate String Keywod Example   | It is just a example keyword in order illustrate how we can use addition python keyword in any other robot keywords or Suites | `robot --i tr-example main.robot `| **from,  to, text** |
+
+## Python Keywords
+| Name                      | Description                                                                                                                                                                                                                                                                                                              | Example                                                                                                                                            | Arg                                 |
+|:-------------------------------|:---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|:---------------------------------------------------------------------------------------------------------------------------------------------------|:-----------------------------------------|
+| translate_messages                | Extra python keyword to translate any string to any lanugages | Can be called both as py and robot | **from_lan, to_lang, text** |
+
+## Support Keywords for Robot suites
+| Name                      | Description                                                                                                                                                                                                                                                                                                              | Example                                                                                                                                            | Arg                                 |
+|:-------------------------------|:---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|:---------------------------------------------------------------------------------------------------------------------------------------------------|:-----------------------------------------|
+| add_strings_to_list                | Extra python keyword to cast 2 strings to list so we can use during robot | Can be called both as py and robot | **str1, str2** |
+| get_current_datetime                | Extra python keyword to return current time in a spesefic format | Can be called both as py and robot | **None** |
 
