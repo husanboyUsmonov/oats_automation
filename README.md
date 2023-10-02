@@ -70,3 +70,30 @@ robot -d cd ../Results main.robot
 | add_strings_to_list                | Extra python keyword to cast 2 strings to list so we can use during robot | Can be called both as py and robot | **str1, str2** |
 | get_current_datetime                | Extra python keyword to return current time in a spesefic format | Can be called both as py and robot | **None** |
 
+## Unittest for WeatherDotLibrary
+```
+cd Library
+pytest -m test_library
+```
+## Checking python code quality
+```
+pylint ../Library WeatherDotLibrary.py
+```
+## Checking robot code quality
+```
+robocop ../Tests main.robot
+```
+## Debugging
+If you are encountering some problems with main.robot files first try:
+```
+cd Test
+robot --dryrun main.robot
+```
+check mistakes accordingl by installing all robor requirements
+If you still have problems with running robot or python files try:
+```
+pip3 install -r requirements.txt
+or
+pip install -r requirements.txt
+```
+Screenshoots
