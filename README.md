@@ -96,4 +96,6 @@ pip3 install -r requirements.txt
 or
 pip install -r requirements.txt
 ```
-Screenshoots
+## Screenshoots
+![image](https://github.com/husanboyUsmonov/oats_automation/assets/146490290/b37b8a65-9176-4e65-8a85-01bf1949d8df)
+
