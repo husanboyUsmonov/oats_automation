@@ -13,11 +13,11 @@ Install venv
 pip3 install virtualenv
 python3 -m venv venv_name
 ```
-Actvate venv in Windows Shell
+Activate venv in Windows Shell
 ```
 venv/Scripts/activate.ps1
 ```
-Actvate venv in Mac terminal
+Activate venv in Mac terminal
 ```
 source venv/bin/activate
 ```
@@ -62,7 +62,7 @@ robot -d cd ../Results main.robot
 ## Python Keywords
 | Name                      | Description                                                                                                                                                                                                                                                                                                              | Example                                                                                                                                            | Arg                                 |
 |:-------------------------------|:---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|:---------------------------------------------------------------------------------------------------------------------------------------------------|:-----------------------------------------|
-| translate_messages                | Extra python keyword to translate any string to any lanugages | Can be called both as py and robot | **from_lan, to_lang, text** |
+| translate_messages                | Extra python keyword to translate any string to any lanugages | Can be called both as py and robot | **from_lang, to_lang, text** |
 
 ## Support Keywords for Robot suites
 | Name                      | Description                                                                                                                                                                                                                                                                                                              | Example                                                                                                                                            | Arg                                 |
@@ -89,7 +89,7 @@ If you are encountering some problems with main.robot files first try:
 cd Test
 robot --dryrun main.robot
 ```
-check mistakes accordingl by installing all robor requirements
+check mistakes accordingly by installing all robor requirements
 If you still have problems with running robot or python files try:
 ```
 pip3 install -r requirements.txt
