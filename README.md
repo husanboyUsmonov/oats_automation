@@ -21,3 +21,27 @@ Actvate venv in Mac terminal
 ```
 source venv/bin/activate
 ```
+#Install dependencies from requirements.txt
+```
+pip3 install -r requirements.txt
+```
+or install from distrubuted wheel package
+```
+cd dist
+pip3 install WeatherDotLibrary-0.1.tar.gz
+```
+## Running main Robot files
+
+In order to run all Suites located in main.robot file
+```
+cd Tests
+robot main.robot
+```
+to run with tags
+```
+robot --i <tag_name> main.robot
+```
+to run locating all results to Results folder
+```
+robot -d cd ../Results main.robot
+```
