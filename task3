@@ -1,0 +1,60 @@
+from robot.api import logger
+from robot.api.deco import library,keyword
+from selenium import webdriver
+from selenium.webdriver.common.by import By
+from selenium.webdriver.support.wait import WebDriverWait
+from selenium.webdriver.support import expected_conditions as EC
+import time
+
+
+@library
+class myLibrary:
+
+    driver = webdriver.Chrome()
+
+    ROBOT_LIBRARY_SCOPE = "Global"
+
+    @keyword
+    def web_open(self,target):
+        self.driver.get(target)
+
+    @keyword
+    def title_should_be(self,ex_title):
+        if self.driver.title != ex_title:
+            logger.error('Title didnt match!')
+        else:
+            logger.debug('------this is working-----')
+
+    @keyword
+    def wait_until_page_contains(self,path):
+        try:
+            WebDriverWait(self.driver,2).until(
+                EC.presence_of_element_located((By.ID,path))
+            )
+        except:
+            logger.error('Element is not found!')
+            raise ValueError('Element is not visible!')
+
+    @keyword
+    def input_text(self,locator,text):
+        element=self.driver.find_element(By.ID,locator)
+        if element.is_displayed():
+            element.send_keys(text)
+
+    @keyword
+    def click_button(self,button):
+        element = self.driver.find_element(By.ID,button)
+        if element.is_displayed:
+            element.click()
+
+    @keyword
+    def close_browsers(self):
+        self.driver.quit()
+
+
+#can we use rf selenium and custom selenium at the same time
+'''
+robotframework==6.1.1
+robotframework-robocop==4.1.1
+robotframework-seleniumlibrary==6.1.2
+'''
